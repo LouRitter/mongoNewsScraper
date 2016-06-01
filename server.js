@@ -15,7 +15,7 @@ app.use(express.static('public'));
 
 
 //Database configuration
-mongoose.connect('mongodb://heroku_jvpvhkxt:Dylan1220@ds023520.mlab.com:23520/heroku_jvpvhkxt');
+mongoose.connect('mongodb://heroku_5137sd5x:op2bvdo5llfctemo41eulaltc4@ds021343.mlab.com:21343/heroku_5137sd5x');
 var db = mongoose.connection;
 
 db.on('error', function (err) {
