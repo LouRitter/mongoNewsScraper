@@ -21,8 +21,8 @@ $(document).on('click', 'p', function(){
       $('#notes').append('<button data-id="' + data._id + '" id="savenote">Save Note</button>');
 
       if(data.note){
-        $('#titleinput').val(data.note.title);
-        $('#bodyinput').val(data.note.body);
+        $('#notes').append('<h3>'+data.note.title+'</h3>');
+        $('#notes').append('<p>'+data.note.body+'</p>');
       }
     });
 });
