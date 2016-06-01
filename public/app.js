@@ -16,9 +16,9 @@ $(document).on('click', 'p', function(){
     .done(function( data ) {
       console.log(data);
       $('#notes').append('<h2>' + data.title + '</h2>');
-      $('#notes').append('<input id="titleinput" name="title" >');
-      $('#notes').append('<textarea id="bodyinput" name="body"></textarea>');
-      $('#notes').append('<button data-id="' + data._id + '" id="savenote">Save Note</button>');
+      $('#notes').append('<input id="titleinput" name="title" ><br>');
+      $('#notes').append('<textarea id="bodyinput" name="body"></textarea><br>');
+      $('#notes').append('<button class="btn btn-default" data-id="' + data._id + '" id="savenote">Save Note</button>');
 
       if(data.note){
         $('#notes').append('<h3>'+data.note.title+'</h3>');
